@@ -29,12 +29,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-
 //        binding.btn.setOnClickListener(){
 //            var enteredText :String = binding.editText.text.toString()
 //            binding.textView.setText("hello $enteredText")
 //        }
-
 
         // use this so as to not have to write binding everywhere
         binding.apply {
@@ -42,6 +40,14 @@ class MainActivity : AppCompatActivity() {
                 var enteredText :String = editText.text.toString()
                 textView.setText("hello $enteredText")
             }
+        }
+
+        var u1 : User = User(1,"jack","123")
+
+        binding.apply {
+            textView1.text = u1.id.toString()
+            textView2.text = u1.name
+            textView3.text = u1.pass
         }
     }
 }
