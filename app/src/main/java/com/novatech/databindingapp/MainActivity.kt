@@ -44,10 +44,12 @@ class MainActivity : AppCompatActivity() {
 
         var u1 : User = User(1,"jack","123")
 
-        binding.apply {
-            textView1.text = u1.id.toString()
-            textView2.text = u1.name
-            textView3.text = u1.pass
-        }
+        binding.user = u1
+
+//        binding.apply {
+//            textView1.text = u1.id.toString()
+//            textView2.text = u1.name
+//            textView3.text = u1.pass
+//        }
     }
 }
